@@ -47,8 +47,8 @@ matrix:
       - wget -O premake5.zip https://github.com/premake/premake-core/releases/download/v5.0.0-alpha14/premake-5.0.0-alpha14-windows.zip
       - unzip premake5.zip
       - export PATH=$PATH:$PWD
-      - wget http://images.autodesk.com/adsk/files/fbx20161_fbxsdk_vs2015_win0.exe
-      - 7z x -ofbx-sdk-windows/ fbx20161_fbxsdk_vs2015_win0.exe
+      - wget http://download.autodesk.com/us/fbx/2019/2019.0/fbx20190_fbxsdk_vs2015_win.exe
+      - 7z x -ofbx-sdk-windows/ fbx20190_fbxsdk_vs2015_win.exe
       - export FBX_SDK_ROOT=$PWD/fbx-sdk-windows/
       - export PATH=$MSBUILD_PATH:$PATH
       - generate_vs2015.bat
